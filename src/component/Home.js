@@ -23,7 +23,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="col-md-6 hero-img-box">
-                                    <img src="./images/bg_63.png" className="img-fluid rounded-start" alt="Hero" />
+                                    <img src="./images/bg_1.png" className="img-fluid rounded-start" alt="Hero" />
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="col-md-6 hero-img-box">
-                                    <img src="./images/bg_63.png" className="img-fluid rounded-start" alt="Hero" />
+                                    <img src="./images/bg_1.png" className="img-fluid rounded-start" alt="Hero" />
                                 </div>
                             </div>
                         </div>

@@ -76,7 +76,7 @@ body {
         display: none;
     }
 .about-section .container{
-    background-image: url("./images/bg_62.png");
+    background-image: url("./images/bg_2.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@ body {
     }
 
     .hero-section .container {
-        background-image: url(./images/bg_61.png);
+        background-image: url("./images/bg_3.png");
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

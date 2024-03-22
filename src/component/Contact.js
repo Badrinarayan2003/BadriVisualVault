@@ -57,7 +57,7 @@ function Contact() {
                 <div className="card border-0 mb-3">
                     <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-0 ">
                         <div className="col contact-img-box bg-dark">
-                            <img src="./images/bg_61.png" className="img-fluid rounded-start" alt="contact" />
+                            <img src="./images/bg_3.png" className="img-fluid rounded-start" alt="contact" />
                         </div>
                         <div className="col">
                             <div className="card-body">

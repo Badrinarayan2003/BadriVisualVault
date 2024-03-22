@@ -5,7 +5,7 @@ function About() {
                 <div className="card about-card d-flex justify-content-center align-items-center overflow-hidden" id="about-card-box">
                     <div className="row row-cols-1 row-cols-lg-2 g-0 h-50 w-75">
                         <div className="col about-img-box">
-                            <img src="./images/bg_62.png" className="img-fluid rounded-start" alt="background" />
+                            <img src="./images/bg_2.png" className="img-fluid rounded-start" alt="background" />
                         </div>
                         <div className="col">
                             <div className="card-body about-card-body">
