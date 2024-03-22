@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    padding: 0 0.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+
+.links a:hover {
+    color: rgb(168, 252, 42);
+    text-decoration: underline;
+    text-decoration-color: rgb(168, 252, 42);
+}
+
+.collapse .navbar-nav .links .active {
+    color: rgb(168, 252, 42);
+}
+
+.container .navbar-brand {
+    color: rgb(168, 252, 42);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+#nav-icon {
+    color: #fff;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: #fff;
+}
+
+@media(max-width:992px) {
+    .navbar .container {
+        background-color: black;
+        opacity: 0.8;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .nav-item .nav-link {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .home-content {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .hero-img-box {
+        padding-top: 3rem;
+    }
+
+    /* about media  */
+
+    .about-card .row .col .card-body h1,
+    .card-desc {
+        text-align: center;
+    }
+
+    .about-img-box {
+        display: none;
+    }
+.about-section .container{
+    background-image: url("./images/bg_62.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about-card-box{
+    background: transparent;
+}
+
+    #skill-cont-box {
+        padding: 3rem 0;
+    }
+
+    #skill-cont-box .container .row h1 {
+        font-size: 2.5rem;
+    }
+
+    #skill-cont-box .container .row p {
+        font-size: 1.2rem;
+    }
+
+    #project-box h1 {
+        font-size: 2.4rem;
+    }
+
+    #project-box .proj-para {
+        font-size: 1rem;
+    }
+
+    /* contact  */
+
+    .contact-img-box {
+        display: none;
+    }
+
+    #contact-sec-box h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media(max-width:1200px) {
+    #contact-box {
+        padding: 2rem;
+    }
+
+    #hero-content p {
+        font-size: 1.2rem;
+    }
+
+    #hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    #hero-content .btn {
+        font-size: 1rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    .hero-img-box {
+        padding-top: 0;
+        display: none;
+    }
+
+    .hero-section .container {
+        background-image: url(./images/bg_61.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #hero-card {
+        background-color: transparent;
+        padding-top: 4rem;
+    }
+
+    .about-img-box {
+        display: none;
+    }
+
+    .about-card-body .card-title {
+        font-size: 2.5rem;
+    }
+
+    .about-card-body p {
+        font-size: 1.1rem;
+    }
+
+    #project-box .proj-para {
+        padding: 0 1.5rem;
+    }
+    #footer-nav-link-box{
+       flex-direction: row;
+       gap: 2rem;
+       justify-content: center;
+    }
+}
+
+@media(max-width:430px) {
+    #hero-content h1 {
+        font-size: 2rem;
+    }
+
+    #hero-content .btn {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    #foot-para {
+        font-size: 0.8rem;
+    }
+
+    #twit,
+    #insta,
+    #fb {
+        font-size: 1.3rem;
+    }
+}
+
+
+.btn {
+    background-color: rgb(168, 252, 42);
+    font-weight: 700;
+}
+
+/* HOME  */
+
+.hero-section {
+    background-color: rgb(7, 7, 7);
+}
+
+.hero-section .container .card {
+    background-color: rgb(7, 7, 7);
+}
+
+.home-content p {
+    color: rgb(168, 252, 42);
+    font-size: 1.6rem;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home-content h1 span {
+    color: rgb(168, 252, 42);
+}
+
+.home-content .btn:hover {
+    background: transparent;
+    border: 2px solid rgb(168, 252, 42);
+    color: rgb(168, 252, 42);
+}
+
+/* ABOUT  */
+
+.about-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+
+.about-card {
+    background-color: rgb(7, 7, 7);
+}
+
+.about-card-body h1 {
+    font-size: 3rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+}
+
+/* skill */
+
+.skill-section {
+    background-color: rgb(7, 7, 7);
+    padding: 7rem 0;
+}
+
+.skill-fs {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.skill-section .container .row p {
+    font-size: 1.5rem;
+}
+
+.progress-bar span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* project */
+
+.project-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 7rem;
+}
+
+.project-section h1 {
+    font-size: 3.4rem;
+}
+
+.project-section p {
+    font-size: 1.3rem;
+}
+
+/* contact  */
+
+.contact-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 5rem;
+}
+
+.contact-section .container {
+    padding: 6rem;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+}
+
+/* footer section  */
+
+.footer-section {
+    background-color: rgb(7, 7, 7);
+}
+
+.footer-icon {
+    font-size: 1.8rem;
+}
+
+/* .footer-icon {
+    color: #fff;
+} */
+.footer-icon:hover {
+    color: rgb(168, 252, 42);
+}
+
+
+.footer-nav-link{
+    flex-direction: column;
+}
