@@ -75,15 +75,17 @@ body {
     .about-img-box {
         display: none;
     }
-.about-section .container{
-    background-image: url("./images/bg_2.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#about-card-box{
-    background: transparent;
-}
+
+    .about-section .container {
+        background-image: url("./images/bg_2.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #about-card-box {
+        background: transparent;
+    }
 
     #skill-cont-box {
         padding: 3rem 0;
@@ -102,7 +104,11 @@ body {
     }
 
     #project-box .proj-para {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    #project-box #project-cont-box {
+        padding: 0 3rem;
     }
 
     /* contact  */
@@ -114,12 +120,15 @@ body {
     #contact-sec-box h1 {
         font-size: 2.2rem;
     }
+    #contact-sec-box p{
+        font-size: 1.1rem;
+    } 
 
 }
 
 @media(max-width:1200px) {
     #contact-box {
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     #hero-content p {
@@ -132,6 +141,10 @@ body {
 
     #hero-content .btn {
         font-size: 1rem;
+    }
+
+    #project-box .container {
+        padding: 0 5rem;
     }
 
 }
@@ -169,10 +182,17 @@ body {
     #project-box .proj-para {
         padding: 0 1.5rem;
     }
-    #footer-nav-link-box{
-       flex-direction: row;
-       gap: 2rem;
-       justify-content: center;
+
+    #project-box #project-cont-box {
+        padding: 0 1rem;
+    }
+    #contact-box {
+        padding: 1rem;
+    }
+    #footer-nav-link-box {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
     }
 }
 
@@ -279,7 +299,11 @@ body {
 
 .project-section {
     background-color: rgb(7, 7, 7);
-    padding-top: 7rem;
+    padding-top: 3rem;
+}
+
+.project-section .container {
+    padding: 0 10rem;
 }
 
 .project-section h1 {
@@ -289,22 +313,32 @@ body {
 .project-section p {
     font-size: 1.3rem;
 }
+.project-card div{
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.project-card div:hover {
+    background-color: black;
+    opacity: 0.9;
+}
 
 /* contact  */
 
 .contact-section {
     background-color: rgb(7, 7, 7);
-    padding-top: 5rem;
 }
 
 .contact-section .container {
-    padding: 6rem;
+    padding: 0.1rem 10rem;
 }
 
 .contact-section h1 {
+    padding-top: 3.5rem;
     font-size: 3rem;
 }
-
+.contact-section p{
+    font-size: 1.3rem;
+}
 /* footer section  */
 
 .footer-section {
@@ -323,6 +357,6 @@ body {
 }
 
 
-.footer-nav-link{
+.footer-nav-link {
     flex-direction: column;
 }

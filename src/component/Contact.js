@@ -24,9 +24,7 @@ function Contact() {
     const handleClick = (evt) => {
         evt.preventDefault();
         console.log(data);
-
         setDisable(true)
-
         setData({
             username: "",
             email: "",
@@ -37,6 +35,9 @@ function Contact() {
         setTimeout(() => {
             setDisable(false)
         }, 3000)
+
+
+
     }
 
     const isFormEmpty = () => {
@@ -50,8 +51,8 @@ function Contact() {
 
     return (
         <section className="contact-section w-100" id="contact-sec-box">
-            <h1 className="text-center pt-3 text-light fw-bold">Get In Touch</h1>
-            <p className="text-center text-light fw-bold fs-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h1 className="text-center  text-light fw-bold">Get In Touch</h1>
+            <p className="text-center text-light fw-bold ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             <div className="container" id="contact-box">
                 {disable && <p className="text-success text-center">submitted Succesfully!</p>}
                 <div className="card border-0 mb-3">
