@@ -313,13 +313,20 @@ body {
 .project-section p {
     font-size: 1.3rem;
 }
+
+.project-card{
+    height: 100%;
+    background-color: black;
+    border: 0.5px solid white;
+    border-radius: 3px;
+}
 .project-card div{
     cursor: pointer;
     transition: 0.3s linear;
 }
-.project-card div:hover {
+.proj-card-content {
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* contact  */
