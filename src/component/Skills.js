@@ -3,7 +3,7 @@ function Skills() {
         <section className="skill-section w-100 vh-100" id="skill-cont-box">
             <div className="container">
                 <div className="row">
-                    <h1 className="text-center text-light skill-fs py-2">My Skills</h1>
+                    <h1 className="text-center text-light skill-fs">My Skills</h1>
                     <p className="text-center text-light fw-bold py-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                 </div>
                 <div className="row w-100">
