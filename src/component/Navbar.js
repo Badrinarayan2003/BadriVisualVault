@@ -1,14 +1,16 @@
-import {Link, 
-    NavLink} from "react-router-dom";
+import {
+    Link,
+    NavLink
+} from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-transparent w-100 position-fixed" style={{ zIndex: '100' }}>
             <div className="container">
                 <Link className="navbar-brand" to="/">BADRI</Link>
-                <button className="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon text-light"></span>
+                    <span id="navbar-icon"><i className="fa-solid fa-bars"></i></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="ftco-nav">
