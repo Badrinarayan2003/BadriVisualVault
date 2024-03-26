@@ -62,7 +62,7 @@ function Contact() {
     return (
         <section className="contact-section w-100" id="contact-sec-box">
             <h1 className="text-center  text-light fw-bold">Get In Touch</h1>
-            <p className="text-center text-light fw-bold ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p className="text-center text-light fw-bold ">In the middle of difficulty lies opportunity.</p>
             <div className="container" id="contact-box">
                 {disable && <p className="text-success text-center">Send Succesfully!</p>}
                 <div className="card border-0 mb-3">

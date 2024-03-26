@@ -4,7 +4,7 @@ function Skills() {
             <div className="container">
                 <div className="row">
                     <h1 className="text-center text-light skill-fs">My Skills</h1>
-                    <p className="text-center text-light fw-bold py-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p className="text-center text-light fw-bold py-2">Success is not final, failure is not fatal: It is the courage to continue that counts.</p>
                 </div>
                 <div className="row w-100">
                     <div className="col-md-6 animate-box my-3">

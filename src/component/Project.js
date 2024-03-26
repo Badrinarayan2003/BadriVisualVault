@@ -2,7 +2,7 @@ function Project() {
     return (
         <section className="project-section w-100" id="project-box">
             <h1 className="text-center pt-3 text-light fw-bold">My Projects</h1>
-            <p className="text-light fw-bold text-center proj-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p className="text-light fw-bold text-center proj-para">The only way to do great work is to love what you do.</p>
             <div className="container h-100  py-3 gap-3" id="project-cont-box">
 
                 <div className="card mb-3 p-2" >
