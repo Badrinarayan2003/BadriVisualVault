@@ -1,22 +1,18 @@
 function About() {
     return (
-        <section className="about-section w-100 d-flex justify-content-center">
+        <section className="about-section w-100 d-flex justify-content-center" id="about-box">
             <div className="container">
                 <div className="card about-card d-flex justify-content-center align-items-center overflow-hidden" id="about-card-box">
-                    <div className="row row-cols-1 row-cols-lg-2 g-0 h-50 w-75">
-                        <div className="col about-img-box">
-                            <img src="./images/bg_2.png" className="img-fluid rounded-start" alt="background" />
-                        </div>
+                    <div className="row row-cols-1 g-0 h-50 w-75">
                         <div className="col">
                             <div className="card-body about-card-body">
-                                <h1 className="card-title fw-bold text-light my-2">About Me</h1>
-                                <p className="card-text card-desc text-light my-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Name :</span> Badri Narayan Thamba</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Date of birth :</span> March 09, 2003</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Address :</span> Jajpur Odisha India</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Zip code :</span> 754082</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Email :</span> badrithamba@gmail.com</p>
-                                <p className="fw-bold card-text"><span className="card-text fw-bold text-light">Phone :</span> +91 6371785300</p>
+                                <h1 className="card-title fw-bold text-light my-2 text-center">About Me</h1>
+                                <p className="card-text about-text"><span className="card-text fw-bold text-light">Hello,</span></p>
+                                <p className="card-text card-desc my-3">I'm Badri Narayan Thamba, a frontend web developer based in India. My expertise lies in crafting engaging web applications using React.js, Bootstrap, and Styled Components.</p>
+                                <p className="card-text card-desc my-3">I'm passionate about creating user-friendly interfaces and thrive on turning innovative ideas into polished digital. I believe in the power of collaboration and enjoy connecting with fellow developers to exchange insights and ideas.</p>
+                                <p className="card-text card-desc my-3">Thank you for visiting my portfolio website. I invite you to explore my projects and look forward to the opportunity of working together on your next venture.</p>
+                                <p className="card-text card-desc" style={{ marginBottom: '0rem' }}>Best regards,</p>
+                                <p className="card-text card-desc">Badri Narayan Thamba</p>
                             </div>
                         </div>
                     </div>

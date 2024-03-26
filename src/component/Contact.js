@@ -33,7 +33,7 @@ function Contact() {
 
 
         window.Email.send({
-            SecureToken:"77a3e194-71dc-481a-990b-1f6eb7759b76",
+            SecureToken: "77a3e194-71dc-481a-990b-1f6eb7759b76",
             To: 'badrinarayan295@gmail.com',
             From: "badrinarayan295@gmail.com",
             Subject: `Client Enquiry ${data.subject}`,
@@ -71,25 +71,25 @@ function Contact() {
                             <img src="./images/bg_3.png" className="img-fluid rounded-start" alt="contact" />
                         </div>
                         <div className="col">
-                            <div className="card-body">
+                            <div className="card-body input-container">
                                 <div className="form-floating mb-3 ">
-                                    <input type="text" className="form-control border-3" id="floatingInput" placeholder="Full Name" value={data.username} name="username" onChange={handleChange} />
+                                    <input type="text" className="form-control border-2" id="floatingInput" placeholder="Full Name" value={data.username} name="username" onChange={handleChange} />
                                     <label htmlFor="floatingInput">Full Name</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <input type="email" className="form-control border-3" id="floatingEmail" placeholder="Email" value={data.email} name="email" onChange={handleChange} />
+                                    <input type="email" className="form-control border-2 " id="floatingEmail" placeholder="Email" value={data.email} name="email" onChange={handleChange} />
                                     <label htmlFor="floatingPassword">Email</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <input type="number" className="form-control border-3" id="floatingNumber" placeholder="Phone" value={data.phone} name="phone" onChange={handleChange} />
+                                    <input type="number" className="form-control border-2" id="floatingNumber" placeholder="Phone" value={data.phone} name="phone" onChange={handleChange} />
                                     <label htmlFor="floatingPassword">Phone</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <input type="text" className="form-control border-3" id="floatingSubject" placeholder="Subject" value={data.subject} name="subject" onChange={handleChange} />
+                                    <input type="text" className="form-control border-2" id="floatingSubject" placeholder="Subject" value={data.subject} name="subject" onChange={handleChange} />
                                     <label htmlFor="floatingPassword">Subject</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <textarea className="form-control border-3" placeholder="Leave a comment here" id="floatingTextarea" style={{ height: '150px' }} value={data.message} name="message" onChange={handleChange}></textarea>
+                                    <textarea className="form-control border-2" placeholder="Leave a comment here" id="floatingTextarea" style={{ height: '150px' }} value={data.message} name="message" onChange={handleChange}></textarea>
                                     <label htmlFor="floatingTextarea2">Message</label>
                                 </div>
                                 <div className="d-grid gap-2 col-6">

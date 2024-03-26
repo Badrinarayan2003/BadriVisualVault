@@ -33,7 +33,7 @@ body {
     margin-left: 1.5rem;
 }
 
-#navbar-icon i{
+#navbar-icon i {
     color: #fff;
     font-size: 2rem;
 }
@@ -53,6 +53,10 @@ body {
     .nav-item .nav-link {
         display: inline-block;
         padding: 1rem;
+    }
+
+    .hero-section {
+        height: 75vh;
     }
 
     .home-content {
@@ -75,15 +79,9 @@ body {
         display: none;
     }
 
-    .about-section .container {
-        background-image: url("./images/bg_2.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #about-card-box {
-        background: transparent;
+    .about-text {
+        color: #fff;
+        text-align: center;
     }
 
     #skill-cont-box {
@@ -98,17 +96,14 @@ body {
         font-size: 1.2rem;
     }
 
+    #project-box .container .card {
+        width: 100%;
+    }
+
     #project-box h1 {
         font-size: 2.4rem;
     }
 
-    #project-box .proj-para {
-        font-size: 1.1rem;
-    }
-
-    #project-box #project-cont-box {
-        padding: 0 3rem;
-    }
 
     /* contact  */
 
@@ -119,9 +114,10 @@ body {
     #contact-sec-box h1 {
         font-size: 2.2rem;
     }
-    #contact-sec-box p{
+
+    #contact-sec-box p {
         font-size: 1.1rem;
-    } 
+    }
 
 }
 
@@ -142,9 +138,7 @@ body {
         font-size: 1rem;
     }
 
-    #project-box .container {
-        padding: 0 5rem;
-    }
+
 
 }
 
@@ -166,32 +160,55 @@ body {
         padding-top: 4rem;
     }
 
-    .about-img-box {
-        display: none;
-    }
-
     .about-card-body .card-title {
         font-size: 2.5rem;
     }
 
     .about-card-body p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-    #project-box .proj-para {
-        padding: 0 1.5rem;
+    #project-box .container .card {
+        width: 80%;
     }
 
-    #project-box #project-cont-box {
-        padding: 0 1rem;
-    }
     #contact-box {
         padding: 1rem;
     }
-    #footer-nav-link-box {
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
+
+    .input-container {
+        background-color: black;
+    }
+
+    .input-container div input,
+    #floatingTextarea {
+        background-color: black;
+        color: #fff;
+    }
+
+    .input-container div label {
+        color: rgb(214, 215, 216);
+    }
+}
+
+@media(max-width:530px) {
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content-box {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #foot-para p {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    #footer-section-box {
+        padding: 1rem;
     }
 }
 
@@ -205,8 +222,8 @@ body {
         font-weight: 700;
     }
 
-    #foot-para {
-        font-size: 0.8rem;
+    #about-box {
+        padding-top: 3rem;
     }
 
     #twit,
@@ -214,6 +231,27 @@ body {
     #fb {
         font-size: 1.3rem;
     }
+
+    #project-box .container .card {
+        width: 100%;
+    }
+
+    .project-section .proj-para {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width:375px) {
+    .about-text {
+        margin-bottom: 0rem;
+    }
+
+    .proj-cont-box h5,
+    p {
+        font-size: 1rem;
+    }
+
 }
 
 
@@ -270,6 +308,11 @@ body {
 
 .card-text {
     font-size: 1.3rem;
+    color: #fff;
+}
+
+.about-card-body p:hover {
+    color: rgb(240, 232, 218);
 }
 
 /* skill */
@@ -303,7 +346,9 @@ body {
 }
 
 .project-section .container {
-    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-section h1 {
@@ -314,19 +359,29 @@ body {
     font-size: 1.3rem;
 }
 
-.project-card{
-    height: 100%;
-    background-color: black;
-    border: 0.5px solid white;
-    border-radius: 3px;
-}
-.project-card div{
-    cursor: pointer;
+.project-section .container .card {
+    width: 65%;
+    background: transparent;
+    border: 1px solid #f7ebeb;
+    border-radius: 10px;
     transition: 0.3s linear;
 }
-.proj-card-content {
-    background-color: black;
-    opacity: 0.8;
+
+.project-section .container .card:hover {
+    border: none;
+    scale: 1.07;
+}
+
+.proj-img-box img {
+    height: 100%;
+}
+
+.proj-cont-box h5 a i {
+    font-size: 1.3rem;
+}
+
+.proj-cont-box p {
+    font-size: 1.1rem;
 }
 
 /* contact  */
@@ -343,27 +398,26 @@ body {
     padding-top: 3.7rem;
     font-size: 3rem;
 }
-.contact-section p{
+
+.contact-section p {
     font-size: 1.3rem;
 }
+
 /* footer section  */
 
 .footer-section {
     background-color: rgb(7, 7, 7);
+    padding: 3rem;
 }
 
 .footer-icon {
     font-size: 1.8rem;
 }
 
-/* .footer-icon {
-    color: #fff;
-} */
-.footer-icon:hover {
-    color: rgb(168, 252, 42);
+.footer-content-box p {
+    margin-bottom: 0.1rem;
 }
 
-
-.footer-nav-link {
-    flex-direction: column;
+.footer-icon:hover {
+    color: rgb(168, 252, 42);
 }
