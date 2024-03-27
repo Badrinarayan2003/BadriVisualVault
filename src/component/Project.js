@@ -13,7 +13,7 @@ function Project() {
                         <div className="col-md-7 ">
                             <div className="card-body p-2 proj-cont-box">
                                 <h5 className="card-title fw-bold text-light">Badri-visual-vault (Portfolio)<a href="https://badri-visual-vault.vercel.app/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">Interactive portfolio crafted with React.js, Bootstrap 5, and custom CSS for a visually appealing and modern presentation of projects.</p>
+                                <p className="card-text text-muted">Interactive portfolio crafted with React.js, Bootstrap 5, and some custom CSS for a visually appealing and modern presentation of projects.</p>
                                 <p className="card-text"><small className="text-muted">Implemented Frontend features with some clickable functions; more enhancements coming.</small></p>
                             </div>
                         </div>

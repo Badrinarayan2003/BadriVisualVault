@@ -1,4 +1,5 @@
 import {
+    Link,
     NavLink
 } from "react-router-dom";
 
@@ -7,7 +8,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg bg-transparent w-100 position-fixed" style={{ zIndex: '100' }}>
             <div className="container">
                 <div className="navbar-brand nav-logo" to="/">
-                    <a href="/"><img src="./images/logo.png" style={{ width: '100%', height: '100%' }} alt="logo" /></a>
+                    <Link to="/"><img src="./images/logo.png" style={{ width: '100%', height: '100%' }} alt="logo" /></Link>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
