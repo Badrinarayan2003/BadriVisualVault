@@ -17,7 +17,7 @@ function Home() {
                                         <p className="fw-bold m-0">Hello!</p>
                                         <h1 className="text-light">I'm <span>Badri</span></h1>
                                         <h1 className=""><span>Narayan Thamba</span></h1>
-                                        <a type="button" href="./files/badriresume.pdf" download="Badri's Resume" className="btn btn-lg my-3 rounded-pill">DOWNLOAD CV</a>
+                                        <a type="button" href="./files/Badri_Narayan_Thamba.pdf" download="Badri's Resume" className="btn btn-lg my-3 rounded-pill">DOWNLOAD CV</a>
                                     </div>
                                 </div>
                                 <div className="col-md-6 hero-img-box">
@@ -33,7 +33,7 @@ function Home() {
                                         <p className="fw-bold m-0">Hello!</p>
                                         <h1 className="text-light">I'm a <span>Frontend</span></h1>
                                         <h1 className=""><span>Developer</span></h1>
-                                        <a type="button" href="./files/badriresume.pdf" download="Badri's Resume" className="btn btn-lg my-3 rounded-pill">DOWNLOAD CV</a>
+                                        <a type="button" href="./files/Badri_Narayan_Thamba.pdf" download="Badri's Resume" className="btn btn-lg my-3 rounded-pill">DOWNLOAD CV</a>
                                     </div>
                                 </div>
                                 <div className="col-md-6 hero-img-box">

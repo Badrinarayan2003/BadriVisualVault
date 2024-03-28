@@ -8,7 +8,7 @@ function Footer() {
                         <p><i className="fa-solid fa-envelope"></i> badrithamba@gmail.com</p>
                     </div>
                     <ul className="list-unstyled d-flex gap-3">
-                        <li className="ms-3"><a className="text-light" href="/"><i className="fa-brands fa-twitter footer-icon" id="twit"></i></a></li>
+                        <li className="ms-3"><a className="text-light" href="https://www.linkedin.com/in/badri-narayan-thamba"><i className="fa-brands fa-linkedin footer-icon" id="twit"></i></a></li>
                         <li className="ms-3"><a className="text-light" href="/"><i className="fa-brands fa-instagram footer-icon" id="insta"></i></a></li>
                         <li className="ms-3"><a className="text-light" href="/"><i className="fa-brands fa-facebook footer-icon" id="fb"></i></a></li>
                     </ul>

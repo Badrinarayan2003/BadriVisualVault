@@ -56,8 +56,8 @@ function Skills() {
                             <h3 className="text-light">Bootstrap 5</h3>
                             <div className="progress">
                                 <div className="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style={{ width: '65%', backgroundColor: 'rgb(168, 252, 42)' }}>
-                                    <span>65%</span>
+                                    aria-valuemax="100" style={{ width: '75%', backgroundColor: 'rgb(168, 252, 42)' }}>
+                                    <span>75%</span>
                                 </div>
                             </div>
                         </div>

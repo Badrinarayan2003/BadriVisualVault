@@ -1,11 +1,8 @@
-import {
-    Link,
-    NavLink
-} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-transparent w-100 position-fixed" style={{ zIndex: '100' }}>
+        <nav className="navbar navbar-expand-lg w-100 bg-transparent position-fixed" style={{ zIndex: '100' }}>
             <div className="container">
                 <div className="navbar-brand nav-logo" to="/">
                     <Link to="/"><img src="./images/logo.png" style={{ width: '100%', height: '100%' }} alt="logo" /></Link>
