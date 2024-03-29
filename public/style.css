@@ -265,6 +265,7 @@ body {
 .btn {
     background-color: rgb(168, 252, 42);
     font-weight: 700;
+    transition: 0.3s linear;
 }
 
 /* HOME  */
@@ -295,6 +296,7 @@ body {
     background: transparent;
     border: 2px solid rgb(168, 252, 42);
     color: rgb(168, 252, 42);
+    scale: 1.1;
 }
 
 /* ABOUT  */

@@ -60,8 +60,8 @@ function Project() {
                         <div className="col-md-7 ">
                             <div className="card-body p-2 proj-cont-box">
                                 <h5 className="card-title fw-bold text-light">Amazon-Homepage-Clone<a href="/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                <p className="card-text text-muted">I've meticulously crafted a replica of the Amazon homepage utilizing HTML and CSS, showcasing my expertise in frontend web development.</p>
+                                <p className="card-text"><small className="text-muted">Exciting updates coming soon to enhance user engagement and improve browsing experience.</small></p>
                             </div>
                         </div>
                     </div>
