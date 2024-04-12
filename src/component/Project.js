@@ -23,13 +23,12 @@ function Project() {
                 <div className="card mb-3 p-2" >
                     <div className="row g-0 ">
                         <div className="col-md-5 proj-img-box">
-                            <img src="./images/project_2.png" className="img-fluid rounded-start" alt="project-img" />
+                            <img src="./images/project_3.png" className="img-fluid rounded-start" alt="project-img" />
                         </div>
                         <div className="col-md-7 ">
                             <div className="card-body p-2 proj-cont-box">
-                                <h5 className="card-title fw-bold text-light">Weather App<a href="https://weather-app-chi-sage-29.vercel.app/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">Developed a React-based weather application featuring a dynamic weather card component, seamlessly
-                                    displaying current weather data. </p>
+                                <h5 className="card-title fw-bold text-light">EzPizi (E-commerce Website)<a href="https://ez-pizi.vercel.app/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
+                                <p className="card-text text-muted">In-progress: React E-commerce Website development. Features include product listing, cart, and checkout. Stay tuned for updates!</p>
                                 <p className="card-text"><small className="text-muted">Implemented Frontend features with some clickable functions; more enhancements coming.</small></p>
                             </div>
                         </div>
@@ -39,14 +38,14 @@ function Project() {
                 <div className="card mb-3 p-2" >
                     <div className="row g-0 ">
                         <div className="col-md-5 proj-img-box">
-                            <img src="./images/project_3.png" className="img-fluid rounded-start" alt="project-img" />
+                            <img src="./images/project_2.png" className="img-fluid rounded-start" alt="project-img" />
                         </div>
                         <div className="col-md-7 ">
                             <div className="card-body p-2 proj-cont-box">
-                                <h5 className="card-title fw-bold text-light">Netflix-Homepage-Clone<a href="/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">Developed a Netflix homepage clone using HTML and CSS, showcasing my frontend web
-                                    development skills.</p>
-                                <p className="card-text"><small className="text-muted">Stay tuned for further enhancements aimed at enhancing user experience and functionality.</small></p>
+                                <h5 className="card-title fw-bold text-light">Weather App<a href="https://weather-app-chi-sage-29.vercel.app/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
+                                <p className="card-text text-muted">Developed a React-based weather application featuring a dynamic weather card component, seamlessly
+                                    displaying current weather data. </p>
+                                <p className="card-text"><small className="text-muted">Implemented Frontend features with some clickable functions; more enhancements coming.</small></p>
                             </div>
                         </div>
                     </div>
