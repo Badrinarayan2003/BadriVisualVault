@@ -10,7 +10,7 @@ function Footer() {
                     <ul className="list-unstyled d-flex gap-3">
                         <li className="ms-3"><a className="text-light" href="https://www.linkedin.com/in/badri-narayan-thamba"><i className="fa-brands fa-linkedin footer-icon" id="linkedIn"></i></a></li>
                         <li className="ms-3"><a className="text-light" href="https://github.com/Badrinarayan2003?tab=repositories"><i className="fa-brands fa-github footer-icon" id="git"></i></a></li>
-                        <li className="ms-3"><a className="text-light" href="/"><i className="fa-brands fa-instagram footer-icon" id="insta"></i></a></li>
+                        <li className="ms-3"><a className="text-light" href="https://www.instagram.com/i_badri_69/"><i className="fa-brands fa-instagram footer-icon" id="insta"></i></a></li>
                         <li className="ms-3"><a className="text-light" href="/"><i className="fa-brands fa-facebook footer-icon" id="fb"></i></a></li>
                     </ul>
                 </div>
