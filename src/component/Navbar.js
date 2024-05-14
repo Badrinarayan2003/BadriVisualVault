@@ -1,25 +1,30 @@
-import { Link, NavLink } from "react-router-dom";
+
+import { useState } from "react";
+
 
 function Navbar() {
+    const [color, setColor] = useState(false)
+
+    const handleColor = () => {
+        if (window.scrollY >= 200) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+    window.addEventListener("scroll", handleColor)
+
     return (
-        <nav className="navbar navbar-expand-lg w-100 bg-transparent position-fixed" style={{ zIndex: '100' }}>
+        <nav className={color ? "navbar navbar-expand-lg w-100 position-fixed nav-bg" : "navbar navbar-expand-lg w-100 position-fixed"} >
             <div className="container">
                 <div className="navbar-brand nav-logo" to="/">
-                    <Link to="/"><img src="./images/logo.png" style={{ width: '100%', height: '100%' }} alt="logo" /></Link>
+                    <img src="./images/logo.png" style={{ width: '100%', height: '100%' }} alt="logo" />
                 </div>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span id="navbar-icon"><i className="fa-solid fa-bars"></i></span>
-                </button>
 
-                <div className="collapse navbar-collapse" id="ftco-nav">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item links"><NavLink to="/" className="nav-link">Home</NavLink></li>
-                        <li className="nav-item links"><NavLink to="/about" className="nav-link">About</NavLink></li>
-                        <li className="nav-item links"><NavLink to="/skills" className="nav-link">Skills</NavLink></li>
-                        <li className="nav-item links"><NavLink to="/projects" className="nav-link">Projects</NavLink></li>
-                        <li className="nav-item links"><NavLink to="/contact" className="nav-link">Contact</NavLink></li>
-                    </ul>
+                <div className="nav-btn-box">
+                    <a href="https://www.linkedin.com/in/badri-narayan-thamba/">
+                        <button class='glowing-btn'><span class='glowing-txt'>@_<span class='faulty-letter'>CON</span>NECT</span></button>
+                    </a>
                 </div>
             </div>
         </nav>

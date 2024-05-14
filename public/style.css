@@ -1,8 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+    --glow-color: hsl(186 100% 69%);
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.glowing-btn {
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35rem 1rem;
+    border: 0.1rem solid var(--glow-color);
+    border-radius: 0.45rem;
+    background: black;
+    perspective: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+}
+
+.glowing-txt {
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+    animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+}
+
+.glowing-btn:hover:after {
+    opacity: 1;
+}
+
+@keyframes faulty-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 0.1;
+    }
+
+    4% {
+        opacity: 0.5;
+    }
+
+    19% {
+        opacity: 0.5;
+    }
+
+    21% {
+        opacity: 0.1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    83% {
+        opacity: 0.4;
+    }
+
+    87% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes border-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.1;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .links a {
@@ -16,66 +226,205 @@ body {
 }
 
 .nav-logo {
-    width: 2.2rem;
-    height: 3rem;
+    width: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.links a:hover {
-    color: rgb(168, 252, 42);
-    text-decoration: underline;
-    text-decoration-color: rgb(168, 252, 42);
-    scale: 1.2;
+.navbar {
+    z-index: 100;
+    height: 80px;
+    transition: .5s ease-in-out;
 }
 
-.collapse .navbar-nav .links .active {
-    color: rgb(168, 252, 42);
+.nav-bg {
+    background-color: black;
+    opacity: 0.7;
 }
 
-.container .navbar-brand {
-    color: rgb(168, 252, 42);
-    font-size: 2rem;
-    font-weight: 700;
-    margin-left: 1.5rem;
+.btn {
+    background-color: hsl(186 100% 69%);
+    font-weight: 800;
+    transition: 0.3s linear;
+    box-shadow: 0px 0px 5px hsl(186 100% 69%);
 }
 
-#navbar-icon i {
+/* HOME  */
+
+.hero-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 11rem;
+}
+
+.hero-img-box {
+    width: 70%;
+    height: 35vh;
+}
+
+.hero-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content-box {
+    width: 70%;
+    box-shadow: 0px 0px 10px hsl(186 100% 69%);
+    border-radius: 25px;
+    background: linear-gradient(43deg, rgba(54, 54, 54, 0.964) 45%, rgba(34, 228, 255, 1) 94%);
+    padding: 1rem;
+}
+
+.hero-text {
+    font-weight: 800;
     color: #fff;
-    font-size: 2rem;
+}
+
+/* ABOUT  */
+
+.about-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 2rem;
+}
+
+.about-card {
+    background-color: rgb(7, 7, 7);
+}
+
+.about-card-body h1 {
+    font-size: 3rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.about-card-body p:hover {
+    color: rgb(240, 232, 218);
+}
+
+/* skill */
+
+.skill-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 2rem;
+}
+
+.skill-fs {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.skill-section .container .row p {
+    font-size: 1rem;
+}
+
+.progress-bar span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* project */
+
+.project-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 2rem;
+}
+
+.project-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section h1 {
+    font-size: 2.8rem;
+}
+
+.project-section p {
+    font-size: 1rem;
+}
+
+.project-section .container .card {
+    width: 65%;
+    background: transparent;
+    border: 1px solid #f7ebeb;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.project-section .container .card:hover {
+    border: none;
+    scale: 1.07;
+}
+
+.proj-img-box img {
+    height: 100%;
+}
+
+.proj-cont-box h5 a i {
+    font-size: 1.3rem;
+}
+
+.proj-cont-box p {
+    font-size: 1.1rem;
+}
+
+/* contact  */
+
+.contact-section {
+    background-color: rgb(7, 7, 7);
+}
+
+.contact-section .container {
+    padding: 0.1rem 10rem;
+}
+
+.contact-section h1 {
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.contact-section p {
+    font-size: 1rem;
+}
+
+/* footer section  */
+
+.footer-section {
+    background-color: rgb(7, 7, 7);
+    padding: 3rem;
+}
+
+.footer-icon {
+    font-size: 1.8rem;
+    transition: 0.3s linear;
+}
+
+.footer-content-box p {
+    margin-bottom: 0.1rem;
+}
+
+.footer-icon:hover {
+    color: hsl(186 100% 69%);
+    scale: 1.3;
+}
+
+.transit {
+    transition: padding 0.5s;
+}
+
+.bg {
+    background-color: black;
 }
 
 @media(max-width:992px) {
-    .navbar .container {
-        background-color: black;
-        opacity: 0.9;
-    }
-
-    .navbar-nav .nav-item {
-        text-align: center;
-    }
-
-    .nav-item .nav-link {
-        display: inline-block;
-        padding: 1rem;
-    }
-
-    .hero-section {
-        height: 75vh;
-    }
-
-    .home-content {
-        padding-top: 5rem;
-        text-align: center;
-    }
-
-    .hero-img-box {
-        padding-top: 3rem;
-    }
-
     /* about media  */
-
     .about-card .row .col .card-body h1,
     .card-desc {
         text-align: center;
@@ -131,41 +480,9 @@ body {
     #contact-box {
         padding: 2rem 0;
     }
-
-    #hero-content p {
-        font-size: 1.2rem;
-    }
-
-    #hero-content h1 {
-        font-size: 2.4rem;
-    }
-
-    #hero-content .btn {
-        font-size: 1rem;
-    }
-
-
-
 }
 
 @media(max-width:768px) {
-    .hero-img-box {
-        padding-top: 0;
-        display: none;
-    }
-
-    .hero-section .container {
-        background-image: url("./images/bg_3.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #hero-card {
-        background-color: transparent;
-        padding-top: 4rem;
-    }
-
     .about-card-body .card-title {
         font-size: 2.5rem;
     }
@@ -219,17 +536,16 @@ body {
 }
 
 @media(max-width:430px) {
-    #hero-content h1 {
-        font-size: 2rem;
+    .glowing-btn {
+        font-size: 0.6rem;
     }
 
-    #hero-content .btn {
-        font-size: 0.9rem;
-        font-weight: 700;
+    #hero-text-box {
+        width: 83%;
     }
 
     #about-box {
-        padding-top: 3rem;
+        padding-top: 0rem;
     }
 
     #linkedIn,
@@ -247,6 +563,7 @@ body {
         font-size: 1rem;
         padding: 0 1rem;
     }
+
 }
 
 @media(max-width:375px) {
@@ -258,185 +575,16 @@ body {
     p {
         font-size: 1rem;
     }
-
 }
 
-
-.btn {
-    background-color: rgb(168, 252, 42);
-    font-weight: 700;
-    transition: 0.3s linear;
+@media (min-width: 576px) and (max-width: 840px) {
+    #hero-text-box {
+        width: 95%;
+    }
 }
 
-/* HOME  */
-
-.hero-section {
-    background-color: rgb(7, 7, 7);
-}
-
-.hero-section .container .card {
-    background-color: rgb(7, 7, 7);
-}
-
-.home-content p {
-    color: rgb(168, 252, 42);
-    font-size: 1.6rem;
-}
-
-.home-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-.home-content h1 span {
-    color: rgb(168, 252, 42);
-}
-
-.home-content .btn:hover {
-    background: transparent;
-    border: 2px solid rgb(168, 252, 42);
-    color: rgb(168, 252, 42);
-    scale: 1.1;
-}
-
-/* ABOUT  */
-
-.about-section {
-    background-color: rgb(7, 7, 7);
-    padding-top: 7rem;
-    padding-bottom: 4rem;
-}
-
-.about-card {
-    background-color: rgb(7, 7, 7);
-}
-
-.about-card-body h1 {
-    font-size: 3rem;
-}
-
-.card-text {
-    font-size: 1.3rem;
-    color: #fff;
-}
-
-.about-card-body p:hover {
-    color: rgb(240, 232, 218);
-}
-
-/* skill */
-
-.skill-section {
-    background-color: rgb(7, 7, 7);
-    padding: 7rem 0;
-}
-
-.skill-fs {
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding-top: 1rem;
-}
-
-.skill-section .container .row p {
-    font-size: 1.5rem;
-}
-
-.progress-bar span {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: black;
-}
-
-/* project */
-
-.project-section {
-    background-color: rgb(7, 7, 7);
-    padding-top: 3rem;
-}
-
-.project-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-section h1 {
-    font-size: 3.4rem;
-}
-
-.project-section p {
-    font-size: 1.3rem;
-}
-
-.project-section .container .card {
-    width: 65%;
-    background: transparent;
-    border: 1px solid #f7ebeb;
-    border-radius: 10px;
-    transition: 0.3s linear;
-}
-
-.project-section .container .card:hover {
-    border: none;
-    scale: 1.07;
-}
-
-.proj-img-box img {
-    height: 100%;
-}
-
-.proj-cont-box h5 a i {
-    font-size: 1.3rem;
-}
-
-.proj-cont-box p {
-    font-size: 1.1rem;
-}
-
-/* contact  */
-
-.contact-section {
-    background-color: rgb(7, 7, 7);
-}
-
-.contact-section .container {
-    padding: 0.1rem 10rem;
-}
-
-.contact-section h1 {
-    padding-top: 3.7rem;
-    font-size: 3rem;
-}
-
-.contact-section p {
-    font-size: 1.3rem;
-}
-
-/* footer section  */
-
-.footer-section {
-    background-color: rgb(7, 7, 7);
-    padding: 3rem;
-}
-
-.footer-icon {
-    font-size: 1.8rem;
-    transition: 0.3s linear;
-}
-
-.footer-content-box p {
-    margin-bottom: 0.1rem;
-}
-
-.footer-icon:hover {
-    color: rgb(168, 252, 42);
-    scale: 1.3;
-}
-
-.transit {
-    transition: padding 0.5s;
-}
-
-.bg {
-    background-color: black;
+@media(max-width:576px) {
+    .hero-sub-sec {
+        margin-top: 1rem;
+    }
 }
