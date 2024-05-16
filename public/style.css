@@ -337,6 +337,60 @@ body {
 }
 
 .project-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.project-section h1 {
+    font-size: 2.8rem;
+}
+
+.project-section p {
+    font-size: 1rem;
+}
+
+.project-section .container .card {
+    width: 65%;
+    background: transparent;
+    border: 1px solid #f7ebeb;
+    border-radius: 10px;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.project-section .container .card:hover {
+    border: none;
+    scale: 1.07;
+}
+
+.proj-img-box img {
+    height: 100%;
+}
+
+.proj-cont-box h5 a i {
+    font-size: 1.3rem;
+}
+
+.proj-cont-box p {
+    font-size: 1.1rem;
+}
+
+
+/* .project-section {
+    background-color: rgb(7, 7, 7);
+    padding-top: 2rem;
+}
+
+.project-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +427,7 @@ body {
 
 .proj-cont-box p {
     font-size: 1.1rem;
-}
+} */
 
 /* contact  */
 
