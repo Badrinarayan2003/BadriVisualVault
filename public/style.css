@@ -267,6 +267,7 @@ body {
 .hero-img-box img {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 .hero-content-box {
@@ -329,6 +330,73 @@ body {
     color: black;
 }
 
+.color-1 {
+    width: 0;
+    animation: one 1s forwards;
+}
+
+.color-2 {
+    width: 0;
+    animation: two 1.5s forwards;
+}
+
+.color-3 {
+    width: 0;
+    animation: three 2s forwards;
+}
+
+.color-4 {
+    width: 0;
+    animation: four 2.5s forwards;
+}
+
+.color-5 {
+    width: 0;
+    animation: five 3s forwards;
+}
+
+.color-6 {
+    width: 0;
+    animation: six 3.5s forwards;
+}
+
+@keyframes one {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes two {
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes three {
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes four {
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes five {
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes six {
+    to {
+        width: 50%;
+    }
+}
+
+
 /* project */
 
 .project-section {
@@ -342,11 +410,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .project-section h1 {
@@ -383,51 +451,6 @@ body {
 .proj-cont-box p {
     font-size: 1.1rem;
 }
-
-
-/* .project-section {
-    background-color: rgb(7, 7, 7);
-    padding-top: 2rem;
-}
-
-.project-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-section h1 {
-    font-size: 2.8rem;
-}
-
-.project-section p {
-    font-size: 1rem;
-}
-
-.project-section .container .card {
-    width: 65%;
-    background: transparent;
-    border: 1px solid #f7ebeb;
-    border-radius: 10px;
-    transition: 0.3s linear;
-}
-
-.project-section .container .card:hover {
-    border: none;
-    scale: 1.07;
-}
-
-.proj-img-box img {
-    height: 100%;
-}
-
-.proj-cont-box h5 a i {
-    font-size: 1.3rem;
-}
-
-.proj-cont-box p {
-    font-size: 1.1rem;
-} */
 
 /* contact  */
 
@@ -478,6 +501,7 @@ body {
 }
 
 @media(max-width:992px) {
+
     /* about media  */
     .about-card .row .col .card-body h1,
     .card-desc {
