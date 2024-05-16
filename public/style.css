@@ -614,6 +614,10 @@ body {
 }
 
 @media(max-width:430px) {
+    .hero-section {
+        padding-top: 8rem;
+    }
+
     .glowing-btn {
         font-size: 0.6rem;
     }
