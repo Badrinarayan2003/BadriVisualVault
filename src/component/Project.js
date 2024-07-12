@@ -42,11 +42,12 @@ function Project() {
                         <div className="col-md-7 ">
                             <div className="card-body p-2 proj-cont-box">
                                 <h5 className="card-title fw-bold text-light">Hillside Nature Tours (Wordpress Website)<a href="https://hillsidenature.com/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">I contributed to the design and creation of several pages for the Hillside Nature Tours website, developed using WordPress. This freelance project involved collaborating with a colleague who managed the backend and all other things.</p>
+                                <p className="card-text text-muted">Contributed to the design and creation of several pages for the Hillside Nature Tours website, developed using WordPress. This freelance project involved collaborating with a colleague who managed the backend and all other things.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="card mb-3 p-2" >
                     <div className="row g-0 ">
                         <div className="col-md-5 proj-img-box">
@@ -62,7 +63,7 @@ function Project() {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
         </section>
