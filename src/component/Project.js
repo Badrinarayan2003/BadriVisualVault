@@ -33,6 +33,20 @@ function Project() {
                         </div>
                     </div>
                 </div>
+
+                <div className="card mb-3 p-2" >
+                    <div className="row g-0 ">
+                        <div className="col-md-5 proj-img-box">
+                            <img src="./images/project_5.png" className="img-fluid rounded-start" alt="project-img" />
+                        </div>
+                        <div className="col-md-7 ">
+                            <div className="card-body p-2 proj-cont-box">
+                                <h5 className="card-title fw-bold text-light">Hillside Nature Tours (Wordpress Website)<a href="https://hillsidenature.com/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
+                                <p className="card-text text-muted">I contributed to the design and creation of several pages for the Hillside Nature Tours website, developed using WordPress. This freelance project involved collaborating with a colleague who managed the backend and all other things.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card mb-3 p-2" >
                     <div className="row g-0 ">
                         <div className="col-md-5 proj-img-box">
@@ -48,21 +62,7 @@ function Project() {
                         </div>
                     </div>
                 </div>
-
-                <div className="card mb-3 p-2" >
-                    <div className="row g-0 ">
-                        <div className="col-md-5 proj-img-box">
-                            <img src="./images/project_4.png" className="img-fluid rounded-start" alt="project-img" />
-                        </div>
-                        <div className="col-md-7 ">
-                            <div className="card-body p-2 proj-cont-box">
-                                <h5 className="card-title fw-bold text-light">Amazon-Homepage-Clone<a href="/"><i className="fa-solid fa-up-right-from-square text-light float-end"></i></a></h5>
-                                <p className="card-text text-muted">I've meticulously crafted a replica of the Amazon homepage utilizing HTML and CSS, showcasing my expertise in frontend web development.</p>
-                                <p className="card-text"><small className="text-muted">Exciting updates coming soon to enhance user engagement and improve browsing experience.</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
         </section>

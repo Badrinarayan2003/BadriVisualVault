@@ -6,7 +6,6 @@ import ScrollTrigger from 'react-scroll-trigger';
 function Skills() {
     const [counterOn, setCounterOn] = useState(false)
 
-
     return (
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
             <section className="skill-section w-100" id="skill-cont-box">
