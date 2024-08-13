@@ -4,7 +4,7 @@ function Footer() {
             <div className="container ">
                 <div className="d-flex justify-content-between py-3 border-top footer-box">
                     <div className="text-light footer-content-box" id="foot-para">
-                        <p><i className="fa-solid fa-phone"></i> 91+ 6371785300</p>
+                        <p><i className="fa-solid fa-phone"></i> +91 6371785300</p>
                         <p><i className="fa-solid fa-envelope"></i> badrithamba@gmail.com</p>
                     </div>
                     <ul className="list-unstyled d-flex gap-3">

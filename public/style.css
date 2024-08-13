@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --glow-color: hsl(186 100% 69%);
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(20, 19, 19);
 }
 
 .glowing-btn {
@@ -255,8 +260,7 @@ body {
 /* HOME  */
 
 .hero-section {
-    background-color: rgb(7, 7, 7);
-    padding-top: 11rem;
+    padding-top: 7rem;
 }
 
 .hero-img-box {
@@ -272,7 +276,7 @@ body {
 
 .hero-content-box {
     width: 70%;
-    box-shadow: 0px 0px 10px hsl(186 100% 69%);
+    box-shadow: 0px 0px 6px hsl(186 100% 69%);
     border-radius: 25px;
     background: linear-gradient(43deg, rgba(54, 54, 54, 0.964) 45%, rgba(34, 228, 255, 1) 94%);
     padding: 1rem;
@@ -286,16 +290,11 @@ body {
 /* ABOUT  */
 
 .about-section {
-    background-color: rgb(7, 7, 7);
     padding-top: 2rem;
 }
 
 .about-card {
-    background-color: rgb(7, 7, 7);
-}
-
-.about-card-body h1 {
-    font-size: 3rem;
+    background-color: rgb(20, 19, 19);
 }
 
 .card-text {
@@ -308,56 +307,24 @@ body {
 }
 
 /* skill */
-
 .skill-section {
-    background-color: rgb(7, 7, 7);
-    padding-top: 2rem;
+    padding: 0 3.2rem;
 }
 
-.skill-fs {
-    font-size: 3rem;
-    font-weight: 700;
-    padding-top: 1rem;
+.skill-description {
+    color: #fff;
+
 }
 
-.skill-section .container .row p {
-    font-size: 1rem;
+/* PROGRESS BAR  */
+
+.progress {
+    background-color: #fff;
 }
 
-.progress-bar span {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: black;
-}
-
-.color-1 {
+.color-animation {
     width: 0;
-    animation: one 1s forwards;
-}
-
-.color-2 {
-    width: 0;
-    animation: two 1.5s forwards;
-}
-
-.color-3 {
-    width: 0;
-    animation: three 2s forwards;
-}
-
-.color-4 {
-    width: 0;
-    animation: four 2.5s forwards;
-}
-
-.color-5 {
-    width: 0;
-    animation: five 3s forwards;
-}
-
-.color-6 {
-    width: 0;
-    animation: six 3.5s forwards;
+    animation: one 3.5s forwards;
 }
 
 @keyframes one {
@@ -366,41 +333,53 @@ body {
     }
 }
 
-@keyframes two {
-    to {
-        width: 80%;
-    }
+/* CIRCULAR PROGRESS */
+.circular-progress-box {
+    width: 135px;
+    padding: 12px 6px;
+    border-radius: 12px;
+    flex-direction: column;
+    row-gap: 11px;
 }
 
-@keyframes three {
-    to {
-        width: 65%;
-    }
+.circular-progress {
+    position: relative;
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background: conic-gradient(hsl(186 100% 69%) 3.6deg, black 0deg);
 }
 
-@keyframes four {
-    to {
-        width: 60%;
-    }
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: rgb(34 32 32);
 }
 
-@keyframes five {
-    to {
-        width: 75%;
-    }
+.circular-progress-percent-text {
+    color: #e8e8e8;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-@keyframes six {
-    to {
-        width: 50%;
-    }
+.circular-progress-title {
+    color: #e8e8e8;
+    font-size: 0.9rem;
+    font-weight: 500;
+    /* extras */
+    border-radius: 7px;
+    padding: 0 11px;
+    box-shadow: 2px 0px 2px deepskyblue;
 }
 
 
 /* project */
 
 .project-section {
-    background-color: rgb(7, 7, 7);
     padding-top: 2rem;
 }
 
@@ -415,10 +394,6 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.project-section h1 {
-    font-size: 2.8rem;
 }
 
 .project-section p {
@@ -454,17 +429,12 @@ body {
 
 /* contact  */
 
-.contact-section {
-    background-color: rgb(7, 7, 7);
-}
-
 .contact-section .container {
     padding: 0.1rem 10rem;
 }
 
 .contact-section h1 {
     padding-top: 2rem;
-    font-size: 3rem;
 }
 
 .contact-section p {
@@ -474,7 +444,6 @@ body {
 /* footer section  */
 
 .footer-section {
-    background-color: rgb(7, 7, 7);
     padding: 3rem;
 }
 
@@ -503,10 +472,6 @@ body {
 @media(max-width:992px) {
 
     /* about media  */
-    .about-card .row .col .card-body h1,
-    .card-desc {
-        text-align: center;
-    }
 
     .about-img-box {
         display: none;
@@ -514,38 +479,18 @@ body {
 
     .about-text {
         color: #fff;
-        text-align: center;
     }
 
-    #skill-cont-box {
-        padding: 3rem 0;
-    }
-
-    #skill-cont-box .container .row h1 {
-        font-size: 2.5rem;
-    }
-
-    #skill-cont-box .container .row p {
-        font-size: 1.2rem;
-    }
+    /* project  */
 
     #project-box .container .card {
         width: 100%;
     }
 
-    #project-box h1 {
-        font-size: 2.4rem;
-    }
-
-
     /* contact  */
 
     .contact-img-box {
         display: none;
-    }
-
-    #contact-sec-box h1 {
-        font-size: 2.2rem;
     }
 
     #contact-sec-box p {
@@ -561,10 +506,6 @@ body {
 }
 
 @media(max-width:768px) {
-    .about-card-body .card-title {
-        font-size: 2.5rem;
-    }
-
     .about-card-body p {
         font-size: 1rem;
     }
@@ -578,12 +519,12 @@ body {
     }
 
     .input-container {
-        background-color: black;
+        background-color: rgb(20, 19, 19);
     }
 
     .input-container div input,
     #floatingTextarea {
-        background-color: black;
+        background-color: rgb(20, 19, 19);
         color: #fff;
     }
 
@@ -614,10 +555,6 @@ body {
 }
 
 @media(max-width:430px) {
-    .hero-section {
-        padding-top: 7rem;
-    }
-
     .glowing-btn {
         font-size: 0.6rem;
     }

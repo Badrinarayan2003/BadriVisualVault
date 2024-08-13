@@ -23,7 +23,7 @@ function Navbar() {
 
                 <div className="nav-btn-box">
                     <a href="https://www.linkedin.com/in/badri-narayan-thamba/">
-                        <button class='glowing-btn'><span class='glowing-txt'>@_<span class='faulty-letter'>CON</span>NECT</span></button>
+                        <button className='glowing-btn'><span className='glowing-txt'>@_<span className='faulty-letter'>CON</span>NECT</span></button>
                     </a>
                 </div>
             </div>
